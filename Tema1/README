@@ -1,0 +1,62 @@
+    - Problema 1 -
+
+    Timp de implementare: 1 ora
+
+    Explicatie: 
+    Programul citeste perechile de cuvinte si verifica daca sunt anagrame prin intermediul lungimii 
+acestora si al unui vector de frecventa pentru fiecare litera.
+    Perechii i se atribuie apoi un grad prin parcurgerea simultana a celor doua siruri de caractere.
+    Perechea de cuvinte si gradul acesteia sunt memorate intr-o structura care este ulterior sortata
+interschimband elementele acesteia descrescator in functie de grad, iar apoi alfabetic in functie de
+cuvinte.
+
+
+    - Problema 2 -
+
+    Timp de implementare: 1 ora
+
+    Explicatie: 
+    Programul foloseste o structura pentru a ordona si a numara cati nebuni se afla pe fiecare dintre
+liniile paralele cu diagonala principala, respectiv cu diagonala secundara, precum si o structura care 
+memoreaza diagonalele pe care se afla fiecare nebun citit.
+    Se numara cati nebuni se afla pe o diagonala, iar in cazul in care sunt mai mult de 1, se incrementeaza
+numarul de perechi care se ataca folosind formula lui Gauss.
+    Daca numarul de perechi care se ataca este egal cu 1, atunci programul cauta si memoreaza cei doi
+nebuni care se ataca intre ei si, pe rand, verifica daca unul dintre acestia poate fi mutat, scazand 
+numarul de nebuni de pe diagonalele pe care se afla initial si cautand o pozitie pe tabla care are ambele 
+diagonale libere.
+
+
+    - Problema 3 -
+
+    Timp de implementare: 4 ore
+
+    Explicatie:
+    Programul memoreaza cele 6 fete ale cubului in 6 matrice denumite intuitiv, pentru o recunoastere mai
+usoara. Un vector de siruri de caractere memoreaza cele 6 culori folosite si ii atribuie fiecareia cate
+un cod, pe care apoi il inlocuieste in locul corespunzator intr-una dintre matrici. Matricile sunt de tip
+int si folosesc codurile culorilor pentru o mai usoara implementare.
+    Am creat functii cele 6 miscari de baza (in sensul acelor de ceasornic), deoarece miscarile
+complementare pot fi obtinute prin repetarea de 3 ori a celor de baza (F' este acelasi lucru cu F F F).
+Aceasta abordare este motivata de asemenea de usurinta implementarii, si nu de eficienta programului.
+    La fiecare miscare citita, programul roteste cu 90 de grade matricea citita, precum si piesele adiacente
+de pe celelalte fete, avand grija sa respecte ordinea acestora.
+    La final, configuratia matricelor este tradusa inapoi in siruri de caractere, folosind vectorul de
+culori.
+
+    - Problema 4 -
+
+    Timp de implementare: 2 ore
+
+    Explicatie:
+    Programul citeste fiecare numar si il descompune in baza 2, rezultatul fiind trecut intr-un sir de
+caractere, fiecare caracter al acestuia este ulterior memorat intr-o linie a matricii A.
+    Functii special create pentru a transpune o matrice si pentru a inmulti doua matrici conduc la 
+A^2 si A*At.
+    Calcularea scorului fiecarei matrici se realizeaza prin adunarea scorului fiecarui sfert de matrice.
+Am creat o functie aditionala care calculeaza scorul oricarei submatrice a matricei date prin furnizarea
+coordonatelor coltului stanga-sus si dreapta-jos al acesteia (pentru o mai usoara implementare).
+    Dupa calcularea scorurilor, se afla maximul acestora si matricea care ii corespunde, pentru a putea
+fi afisata.
+
+
